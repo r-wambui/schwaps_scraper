@@ -68,7 +68,6 @@ FEED_EXPORTERS  = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'cookcounty.pipelines.DuplicatesPipeline': 100,
-   'cookcounty.pipelines.HtmlFilePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

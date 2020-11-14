@@ -31,12 +31,12 @@ class DuplicatesPipeline(object):
             return item 
 
 
-class HtmlFilePipeline(object):
-    def process_item(self, item, spider):
-        if spider.name == "calendar":
-            date = datetime.now().strftime("%Y-%m-%d %H:%M")
-            file_name = hashlib.sha224(date.encode()).hexdigest()
-            with open('files/%s.html' % file_name, 'w+b') as f:
-                f.write(item['html'])
-            return item
+# class HtmlFilePipeline(object):
+#     def process_item(self, item, spider):
+#         if spider.name == "calendar":
+#             date = datetime.now().strftime("%Y-%m-%d %H:%M")
+#             file_name = hashlib.sha224(date.encode()).hexdigest()
+#             with open('files/%s.html' % file_name, 'w+b') as f:
+#                 f.write(item['html'])
+#             return item
         
