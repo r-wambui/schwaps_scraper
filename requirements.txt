@@ -1,3 +1,4 @@
+APScheduler==3.6.3
 attrs==20.2.0
 Automat==20.2.0
 cffi==1.14.3
@@ -28,5 +29,6 @@ Scrapy==2.3.0
 service-identity==18.1.0
 six==1.15.0
 Twisted==20.3.0
+tzlocal==2.1
 w3lib==1.22.0
 zope.interface==5.1.2
