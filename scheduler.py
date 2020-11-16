@@ -6,10 +6,10 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('cron', day_of_week='mon-fri', hour=12, minute=40)
-
-def scheduled_job():
+def calendar():
     subprocess.call('./scrape.sh', shell=True)
     logging.debug("Finished daily run")
+
+sched.add_job(calendar, 'cron', day_of_week='mon-fri', hour=12, minute=55)
     
 sched.start()
