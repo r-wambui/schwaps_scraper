@@ -10,6 +10,6 @@ def calendar():
     subprocess.call('bash scrape.sh', shell=True)
     logging.debug("Finished daily run")
 
-sched.add_job(calendar, 'cron', day_of_week='mon-fri', hour=13, minute=32)
+sched.add_job(calendar, 'cron', day_of_week='mon-fri', hour=13, minute=40)
     
 sched.start()
