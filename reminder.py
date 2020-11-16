@@ -16,7 +16,7 @@ calendar['date_difference'] = pd.to_datetime(
 
 def send_reassessment_notifications(time_d):
     sender_email = "schwapstest@gmail.com"
-    receiver_email = ["rosyrozzah@gmail.com", "justin@schwaps.com"]
+    receiver_email = ["rosyrozzah@gmail.com",]
     password = "qwerty@123"
 
     message = MIMEMultipart("alternative")
@@ -84,7 +84,7 @@ calendar['date_difference'] = calendar['date_difference'].dt.days.apply(
 # **************************************************
 def send_aroll_notifications():
     sender_email = "schwapstest@gmail.com"
-    receiver_email = ["rosyrozzah@gmail.com", "justin@schwaps.com"]
+    receiver_email = ["rosyrozzah@gmail.com",]
     password = "qwerty@123"
 
     message = MIMEMultipart("alternative")
@@ -156,7 +156,7 @@ send_aroll_notifications()
 
 def send_aroll_pub_notification():
     sender_email = "schwapstest@gmail.com"
-    receiver_email = ["rosyrozzah@gmail.com", "justin@schwaps.com"]
+    receiver_email = ["rosyrozzah@gmail.com", ]
     password = "qwerty@123"
 
     message = MIMEMultipart("alternative")
@@ -228,7 +228,7 @@ send_aroll_pub_notification()
 # **************** [board of reveiw filling dates] ***************
 def send_board_notification():
     sender_email = "schwapstest@gmail.com"
-    receiver_email = ["rosyrozzah@gmail.com", "justin@schwaps.com"]
+    receiver_email = ["rosyrozzah@gmail.com", ]
     password = "qwerty@123"
 
     message = MIMEMultipart("alternative")
